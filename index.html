@@ -14,9 +14,11 @@
         // Select the div element with 'app' id
         const app = document.getElementById('app');
 
-        ReactDOM.render(
-            <h1>Develop. Preview. Ship.</h1>, app
-        );
+        function Header() {
+            return (<h1>Develop. Preview. Ship.</h1>)
+        }
+
+        ReactDOM.render(<Header />, app);
     </script>
 </body>
 
